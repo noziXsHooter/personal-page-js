@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" href="/assets/css/global.css">
     <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/acordeon.css">
 
 </head>
 
@@ -21,27 +22,41 @@
     
 </head>
 <body>
-    <div class="main">
-        <header class="header">
-            <img class="photo" src="/assets/img/photo.jpg" alt="Foto de Wilson Oliveira">
+        <div class="main">
+            <header class="header">
+                <img class="photo" src="/assets/img/photo.jpg" alt="Foto de Wilson Oliveira">
 
-            <h1 class="title">Olá, <br> eu sou o Wilson</h1>
+                <h1 class="title">Olá, <br> eu sou o Wilson</h1>
 
-        <div class="information">
+            <div class="information">
 
-            <p class="job change-to-green">Desenvolvedor Júnior</p>
+                <p class="job change-to-green">Desenvolvedor Júnior</p>
 
-            <p class="location">Rio de Janeiro - RJ</p>
+                <p class="location">Rio de Janeiro - RJ</p>
 
-            <p class="phone">(21) 9 9999-9999</p>
+                <p class="phone">(21) 9 9999-9999</p>
 
-            <p class="email">exemple@gmail.com</p>
+                <p class="email">example@gmail.com</p>
 
+            </div>
+        </header>
+
+            <section class="acordeon open">
+                <button class="trigger" type="button">        
+                        Idiomas
+                </button>
+
+                <div class="content">
+                    <ul>
+                    <li>Português</li>
+                        <li>Inglês</li>
+                        <li>Espanhol</li>
+                    </ul>
+                </div>
+            </section>
         </div>
 
-    </div>
-      
-      
-    </header>
+
+        <script src="/assets/js/acordeon.js"></script>
   </body>
 </html>

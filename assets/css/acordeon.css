@@ -5,10 +5,15 @@
     margin: 1rem 0;
     border: 1px solid white;
     border-radius: 1rem;
+    transition: 0.5s;
+}
+.acordeon.open,
+.acordeon:hover{
+    background-color: blueviolet;
+    border-color: blueviolet;
 }
 
 .acordeon .trigger{
-    font-size: 1.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -21,19 +26,29 @@
     border:none;
 }
 
+
+.acordeon .trigger:hover {
+    cursor: pointer;
+}
 .acordeon .trigger::after{
     content: '';
     display: inline-block;
-    position: relative;
+    width: 3rem;
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('/assets/img/icons/arrow-down.svg');
 }
 
+.acordeon.open .trigger::after{
+    transform: rotate(180deg);
+}
 
 .acordeon .content{
     display: none;
 
 }
-.acordeon {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+.acordeon.open .content{
+    display: inline-block;
+
 }
