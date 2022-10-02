@@ -26,6 +26,11 @@
     border:none;
 }
 
+.acordeon .trigger h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: start;
+}
 
 .acordeon .trigger:hover {
     cursor: pointer;
@@ -41,6 +46,10 @@
     transition: .25s;
 }
 
+.acordeon .trigger h2{
+    margin: 0;
+    font-size: 1.5rem;
+}
 .acordeon.open .trigger::after{
     transform: rotate(180deg);
 }
