@@ -3,14 +3,15 @@
     flex-direction: column;
     width: 100%;
     margin: 1rem 0;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     border-radius: 1rem;
+    background-color: #1e293b;
     transition: 0.5s;
 }
 .acordeon.open,
 .acordeon:hover{
-    background-color: darkolivegreen;
-    border-color: darkolivegreen;
+   /*  background-color: darkolivegreen; */
+    border-color: transparent;
 }
 
 .acordeon .trigger{
